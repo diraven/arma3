@@ -7,6 +7,9 @@ if ! command -v wget &> /dev/null || ! command -v unzip &> /dev/null; then
     exit 1
 fi
 
+# Install steamcmd.
+mkdir -p ./steamcmd
+wget -qO- 'https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz' | tar zxf - -C ./steamcmd
 
 # Vars.
 if [ -z "$1" ]; then
@@ -45,6 +48,10 @@ if ! grep -xq "      - './steam:/root/Steam'" $DOCKER_COMPOSE
 then
     sed -i '/    volumes:/a\      - '\''./steam:/root/Steam'\''' $DOCKER_COMPOSE
 fi
+if ! grep -xq "      - './steamcmd:/steamcmd'" $DOCKER_COMPOSE
+then
+    sed -i '/    volumes:/a\      - '\''./steamcmd:/steamcmd'\''' $DOCKER_COMPOSE
+fi
 
 # Config.
 mkdir -p configs
@@ -53,7 +60,9 @@ wget -nc -O $MAIN_CFG https://raw.githubusercontent.com/BrettMayson/Arma3Server/
 # Provide password.
 if ! grep -q "password" $MAIN_CFG
 then
-    echo "password = \"$(openssl rand -base64 10)\";" >> $MAIN_CFG
+    PASSWORD=$(openssl rand -base64 10)
+    echo "password = \"$PASSWORD\";" >> $MAIN_CFG
+    echo "admin password: $PASSWORD"
 fi
 # Provide admins.
 if ! grep -q "admins" $MAIN_CFG
@@ -79,5 +88,5 @@ fi
 echo "Server ready! Next:"
 echo ""
 echo "Put ur steam login and password in .env file."
-echo 'docker compose run --rm arma3 bash -c "/steamcmd/steamcmd.sh +login"'
+echo 'docker compose run --rm arma3 bash -c '\''/steamcmd/steamcmd.sh +login $STEAM_USER $STEAM_PASSWORD'\'''
 echo 'docker compose up -d && docker compose logs --follow'
