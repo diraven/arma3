@@ -1,0 +1,292 @@
+respawn = 3;
+respawnDelay = 1;
+respawnOnStart = 0;
+disabledAI = 1;
+briefing = 0;
+
+disableChannels[] = {
+	{0, false, true}, //--- Global Chat
+	{1, true, true}, //--- Side Chat
+	{2, true, true}, //--- Command Chat
+	{3, true, true}, //--- Group Chat
+	{4, true, true}, //--- Vehicle Chat
+	{5, false, true}, //--- Direct Chat
+	{6, true, true} //--- System Chat
+};
+
+corpseManagerMode = 1;
+
+corpseLimit = 1;
+
+corpseRemovalMinTime = 180;
+
+corpseRemovalMaxTime = 180;
+
+wreckManagerMode = 1;
+
+wreckLimit = 1;
+
+wreckRemovalMinTime = 120;
+
+wreckRemovalMaxTime = 120;
+
+	// GF Earplugs
+
+class RscTitles {
+	#include "GF_Earplugs\GF_Earplugs_HPP.hpp"
+};
+
+#include "AIS\Effects\BarDlg.hpp"
+
+class CfgFunctions {
+
+	#include "functions\functions.hpp"
+	#include "functions\QS\QS_functions.hpp"
+
+	#include "LARs\spawnComp\functions\functions.cpp"
+	#include "CHVD\CfgFunctions.hpp"
+
+	#include "AIS\cfgFunctions.hpp"
+
+};
+
+#include "compositions\compositions.cfg"
+#include "CHVD\dialog.hpp"
+
+class CfgSounds
+{
+	sounds[] = {};
+	class beeper
+	{
+
+		// how the sound is referred to in the editor (e.g. trigger effects)
+	name = "beeper";
+
+		// filename, volume, pitch, distance (optional)
+	sound[] = { "a3\missions_f_beta\data\sounds\firing_drills\timer.wss", 1, 1, 300 };
+
+	titles[] = {0,""};
+
+};
+
+#include "CRS\f\SFX.hpp"
+
+};
+
+class CfgRemoteExec
+{
+
+};
+
+class Params
+{
+
+	class Game_Mode
+	{
+		title = "Game Mode";
+		texts[] = {"Zeus Sandbox", "Campaign MP", "Campaign Solo"};
+		values[] = {0, 1, 2};
+		default = 1;
+	};
+
+	class Force_Vanilla
+	{
+		title = "Force Vanilla (Will not load mod assets)";
+		texts[] = {"Off", "On"};
+		values[] = {0, 1};
+		default = 0;
+	};
+
+	class PVP_Enabled
+	{
+		title = "Enable PVP";
+		texts[] = {"Coming Soon"};
+		values[] = {0};
+		default = 0;
+	};
+
+	class PVP_Autobalancer
+	{
+		title = "PVP Autobalancer";
+		texts[] = {"Coming Soon"};
+		values[] = {0};
+		default = 0;
+	};
+
+	class Persistent_Player_Pos
+	{
+		title = "[WIP] Persistent Player Position (Must be running Inidbi2)";
+		texts[] = {"Off", "On"};
+		values[] = {0, 1};
+		default = 1;
+	};
+
+	class Persistent_Player_Loadout
+	{
+		title = "[WIP] Persistent Player Loadout (Must be running Inidbi2)";
+		texts[] = {"Off", "On"};
+		values[] = {0, 1};
+		default = 1;
+	};
+
+	class Persistent_Player_Role
+	{
+		title = "[WIP] Persistent Player Role (Must be running Inidbi2)";
+		texts[] = {"Off", "On"};
+		values[] = {0, 1};
+		default = 1;
+	};
+
+	class Persistent_Time
+	{
+		title = "[WIP] Persistent Time And Weather (Must be running Inidbi2)";
+		texts[] = {"Off", "On"};
+		values[] = {0, 1};
+		default = 0;
+	};
+
+	class Persistent_Player_Vehicles
+	{
+		title = "[WIP] Persistent Player Vehicles (Must be running Inidbi2)";
+		texts[] = {"Off", "On"};
+		values[] = {0, 1};
+		default = 1;
+	};
+
+	class Autosave_Interval
+	{
+		title = "Autosave Interval (Must be running Inidbi2)";
+		texts[] = {"3mins", "5mins", "10mins"};
+		values[] = {0, 1, 2};
+		default = 1;
+	};
+
+	class AI_Skill
+	{
+		title = "AI Skill";
+		texts[] = {"Easy", "Regular", "Hard"};
+		values[] = {0, 1, 2};
+		default = 1;
+	};
+
+	class Random_Spawn
+	{
+		title = "Random Starting Spawn";
+		texts[] = {"Default", "Random"};
+		values[] = {0, 1};
+		default = 0;
+	};
+
+	class Enable_Stamina
+	{
+		title = "Stamina";
+		texts[] = {"Off", "On"};
+		values[] = {0, 1};
+		default = 0;
+	};
+
+	class Easy_Weapon_Sway
+	{
+		title = "Easier Weapon Sway";
+		texts[] = {"Off", "On"};
+		values[] = {0, 1};
+		default = 0;
+	};
+
+	class Allow_Withstand
+	{
+		title = "Withstand";
+		texts[] = {"Off", "On"};
+		values[] = {0, 1};
+		default = 1;
+	};
+
+	class AO_Warning
+	{
+		title = "Out Of Bounds Warning (Recommended For Public Servers)";
+		texts[] = {"Off", "On"};
+		values[] = {0, 1};
+		default = 1;
+	};
+
+	class Fast_Travel
+	{
+		title = "Fast Travel";
+		texts[] = {"Off", "On"};
+		values[] = {0, 1};
+		default = 0;
+	};
+
+	class Gear_Restrictions
+	{
+		title = "Gear Role Restrictions";
+		texts[] = {"Off", "On"};
+		values[] = {0, 1};
+		default = 1;
+	};
+
+	class Vehicle_Restrictions
+	{
+		title = "Vehicle Role Restrictions";
+		texts[] = {"Off", "On"};
+		values[] = {0, 1};
+		default = 1;
+	};
+
+	class Zeus_Enabled
+	{
+		title = "Zeus Enabled (Admin Only)";
+		texts[] = {"Off", "On"};
+		values[] = {0, 1};
+		default = 1;
+	};
+
+	class dayNightCycleMode
+	{
+		title = "Set Time Multiplier";
+		texts[] = {"Real Time", "Fast", "Faster"};
+		values[] = {0, 1, 2};
+		default = 2;
+	};
+
+	class slowDown_progression
+	{
+		title = "Slower Mission Progression";
+		texts[] = {"Off", "On"};
+		values[] = {0, 1};
+		default = 0;
+	};
+
+};
+
+#include "CustomControlClasses.h"
+class MyDialog
+{
+	idd = -1;
+
+	class ControlsBackground
+	{
+		class Control852940444
+		{
+			type = 0;
+			idc = 0;
+			x = 0;
+			y = 0;
+			w = 1;
+			h = 1;
+			style = 0;
+			text = "hello";
+			colorBackground[] = {0.1843,0.6902,0.1961,1};
+			colorText[] = {0.8157,0.3098,0.8039,1};
+			font = "PuristaMedium";
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
+
+		};
+
+	};
+	class Controls
+	{
+
+	};
+
+};

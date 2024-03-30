@@ -1,0 +1,31 @@
+class Header
+{
+	gameType = Coop; // Game type
+	minPlayer = 1;
+	maxPlayer = 10;
+};
+
+disableChannels[] = {
+		{0, false, true}, //--- Global Chat
+		{1, true, true},	//--- Side Chat
+		{2, true, true},	//--- Command Chat
+		{3, true, true},	//--- Group Chat
+		{4, true, true},	//--- Vehicle Chat
+		{5, false, true}, //--- Direct Chat
+		{6, true, true}		//--- System Chat
+};
+
+enableDebugConsole = 1;
+respawn = 2;
+respawnDelay = 30;
+respawnVehicleDelay = 0;
+respawnTemplates[] = {"MenuPosition","Tickets"};
+respawnOnStart = 0;
+respawnDialog = 0;
+
+loadScreen="logo.jpg";
+onLoadMission = "ArmA Ukraine: discord.gg/DYA3dNS";
+author = "DiRaven";
+onLoadName = "KRUK: Ground Support";
+
+#include "cfgGroups.hpp"

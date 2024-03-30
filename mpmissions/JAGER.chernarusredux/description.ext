@@ -1,0 +1,35 @@
+author = "DiRaven#0001";
+onLoadName = "Єгер";
+onLoadMission = "Єгер: А ви точно впевнені шо воно вам треба?";
+// loadScreen = "images\loadScreen.paa";
+enableDebugConsole = 1;
+
+class Header
+{
+	gameType = Coop; // Game type
+	minPlayer = 1;
+	maxPlayer = 16;
+};
+
+disableChannels[] = {
+		{0, false, true}, //--- Global Chat
+		{1, true, true},	//--- Side Chat
+		{2, true, true},	//--- Command Chat
+		{3, true, true},	//--- Group Chat
+		{4, true, true},	//--- Vehicle Chat
+		{5, false, true}, //--- Direct Chat
+		{6, true, true}		//--- System Chat
+};
+
+
+// Difficulty.
+#include "CfgDifficultyPresets.hpp"
+
+// Grad modules.
+#include "modules\grad-listBuymenu\grad_listBuymenu.hpp"
+class CfgFunctions {
+    #include "modules\grad-persistence\cfgFunctions.hpp"
+    #include "modules\grad-listBuymenu\cfgFunctions.hpp"
+};
+#include "CfgGradPersistence.hpp"
+#include "CfgGradBuymenu.hpp"

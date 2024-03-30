@@ -1,0 +1,33 @@
+_obj = param [0];
+
+if (!local _obj) exitWith {};
+
+comment "Remove existing items";
+removeAllWeapons _obj;
+removeAllItems _obj;
+removeAllAssignedItems _obj;
+removeUniform _obj;
+removeVest _obj;
+removeBackpack _obj;
+removeHeadgear _obj;
+removeGoggles _obj;
+
+comment "Add containers";
+_obj forceAddUniform "fow_u_uk_bd40_lieutenant";
+_obj addVest "fow_v_uk_officer";
+
+comment "Add binoculars";
+_obj addWeapon "LIB_Binocular_UK";
+
+comment "Add items to containers";
+for "_i" from 1 to 3 do {_obj addItemToUniform "FirstAidKit";};
+_obj addItemToUniform "LIB_ACC_No4_Mk2_Bayo";
+for "_i" from 1 to 2 do {_obj addItemToVest "fow_e_no36mk1";};
+for "_i" from 1 to 2 do {_obj addItemToVest "fow_e_no77";};
+_obj addHeadgear "fow_h_uk_beret_para_2";
+
+comment "Add items";
+_obj linkItem "ItemMap";
+_obj linkItem "ItemCompass";
+_obj linkItem "ItemWatch";
+_obj linkItem "ItemRadio";

@@ -1,0 +1,99 @@
+		'SMA_AAC_MPW_9_Black',
+		'SMA_AAC_MPW_12_Black',
+		'SMA_AAC_MPW_16_Black',
+
+		'sma_minimi_mk3_762tlb',
+		'sma_minimi_mk3_762tsb',
+
+		'SMA_AUG_A3_F',
+
+		'SMA_AUG_EGLM',
+
+		'SMA_ACRblk',
+
+		'SMA_ACRMOE_Blk',
+		'SMA_ACRREMblk',
+		'SMA_ACRREMMOEblk',
+		'SMA_ACRREMMOECQBblk',
+		'SMA_ACRREMAFGblk',
+		'SMA_ACRREMAFGCQBblk',
+		'SMA_ACRREMblk_N',
+		'SMA_ACRREMMOEblk_N',
+		'SMA_ACRREMMOECQBblk_N',
+		'SMA_ACRREMAFGblk_N',
+		'SMA_ACRREMAFGCQBblk_N',
+
+		'SMA_ACRREMGL_B_N',
+		'SMA_ACRREMCQBGL_B_N',
+		'SMA_ACRGL_B',
+		'SMA_ACRREMGL_B',
+		'SMA_ACRREMCQBGL',
+		'SMA_ACRREMCQBGL_B',
+
+
+		'SMA_HK416afgQCB',
+		'SMA_HK416afg',
+		'SMA_HK416vfg',
+		'SMA_HK416CUSTOMCQBvfgB',
+		'SMA_HK416CUSTOMvfgB',
+		'SMA_HK416CUSTOMCQBafgB',
+		'SMA_HK416CUSTOMafgB',
+
+		'SMA_HK416GL',
+		'SMA_HK416GLCQB_B',
+
+		'SMA_HK417',
+		'SMA_HK417vfg',
+		'SMA_HK417_16in',
+
+		'SMA_L85RISNR',
+		'SMA_L85RISafgNR',
+
+
+		'SMA_M4afg',
+		'SMA_M4afg_SM',
+		'SMA_M4afg_BLK1',
+		'SMA_M4afg_BLK1_SM',
+		'SMA_M4MOE',
+		'SMA_M4MOE_SM',
+		'SMA_M4MOE_BLK1',
+		'SMA_M4MOE_BLK1_SM',
+		'SMA_M4afgSTOCK',
+		'SMA_M4CQBR',
+		'SMA_M4CQBRMOE',
+
+		'SMA_M4_GL',
+		'SMA_M4_GL_SM',
+
+		'SMA_MK18afgBLK',
+		'SMA_MK18afgBLK_SM',
+		'SMA_MK18MOEBLK',
+		'SMA_MK18MOEBLK_SM',
+
+		'SMA_MK18BLK_GL',
+		'SMA_MK18BLK_GL_SM',
+
+		'SMA_Mk16_black',
+		'SMA_Mk16_blackQCB',
+
+		'SMA_MK16_EGLM_black',
+
+		'SMA_Mk17_16_black',
+		'SMA_Mk17_black',
+
+		'SMA_MK17_EGLM_black',
+
+		'SMA_SAR21_F',
+		'SMA_SAR21MMS_F',
+		'SMA_SAR21_AFG_F',
+		'SMA_SAR21MMS_AFG_F',
+
+		'SMA_SKS_F',
+
+		'SMA_Steyr_AUG_BLACK_F',
+
+		'SMA_STG_E4_BLACK_F',
+
+		'SMA_TavorBLK_F',
+
+		'SMA_CTARBLK_F'

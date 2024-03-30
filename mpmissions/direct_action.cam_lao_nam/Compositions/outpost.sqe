@@ -1,0 +1,139 @@
+version=54;
+center[]={4982.8735,5,2201.7571};
+class items
+{
+	items=4;
+	class Item0
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.55859375,2.2100234,-0.57397461};
+		};
+		side="Empty";
+		flags=5;
+		class Attributes
+		{
+			disableSimulation=1;
+		};
+		id=8;
+		type="Land_BagBunker_Tower_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						singleType="BOOL";
+						value=0;
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+	class Item1
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.55859375,0.8253026,-0.57397461};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			init="this setVariable [""outpost"", true];";
+			disableSimulation=1;
+		};
+		id=10;
+		type="B_CargoNet_01_ammo_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						singleType="BOOL";
+						value=0;
+					};
+				};
+			};
+			nAttributes=2;
+		};
+	};
+	class Item2
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={3.1132813,3.9768047,-1.0720215};
+		};
+		side="Empty";
+		flags=5;
+		class Attributes
+		{
+			init="this setVariable [""flagName"", ""Outpost""];";
+		};
+		id=11;
+		type="Flag_NATO_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						singleType="BOOL";
+						value=0;
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+	class Item3
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-1.996582,0.93780661,2.2199707};
+			angles[]={0,5.5177708,0};
+		};
+		side="Empty";
+		flags=5;
+		class Attributes
+		{
+		};
+		id=13;
+		type="Land_PortableLight_02_double_olive_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						singleType="BOOL";
+						value=0;
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+};

@@ -1,0 +1,6 @@
+
+	_blackListedGroupTypes = [
+	
+	];
+	
+	_blackListedGroupTypes

@@ -1,0 +1,108 @@
+version=54;
+center[]={4979.875,5,2221.7925};
+class items
+{
+	items=3;
+	class Item0
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.20117188,2.4179983,-1.5605469};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			init="this setVariable [""repairStation"", true];";
+			disableSimulation=1;
+		};
+		id=0;
+		type="Land_RepairDepot_01_green_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						singleType="BOOL";
+						value=0;
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+	class Item1
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.78759766,1.2266645,0.80322266};
+			angles[]={0,1.5647045,-0};
+		};
+		side="Empty";
+		flags=1;
+		class Attributes
+		{
+		};
+		id=14;
+		type="Land_PortableLight_02_double_olive_F";
+		atlOffset=0.28885794;
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						singleType="BOOL";
+						value=0;
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+	class Item2
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.98828125,1.2261171,0.75683594};
+			angles[]={0,4.7062974,-0};
+		};
+		side="Empty";
+		flags=1;
+		class Attributes
+		{
+		};
+		id=15;
+		type="Land_PortableLight_02_double_olive_F";
+		atlOffset=0.28831053;
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						singleType="BOOL";
+						value=0;
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+};
