@@ -14,7 +14,11 @@ if [ -z "$1" ]; then
     exit 1
 fi
 MISSION_NAME=$1
-MAX_PLAYERS=10
+if [ -z "$2" ]; then
+    echo "Max players must be set."
+    exit 1
+fi
+MAX_PLAYERS=$2
 ADMIN=76561197999599845
 
 # Files.
